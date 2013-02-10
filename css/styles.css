@@ -1,14 +1,12 @@
 @charset "UTF-8";
 /* CSS Document */
 
-header {
-	margin-left: -20px;
-}
-
 .container-fluid {
 	max-width: 940px;
+	margin: auto;
 }
 
+/*Diagnostic styling*/
 
 .span12 {
 	background-color: red;
@@ -17,4 +15,10 @@ header {
 .span6 {
 	background-color: blue;
 	float: left;
+}
+
+
+img {
+	height: auto;
+	max-width: 100%;
 }
