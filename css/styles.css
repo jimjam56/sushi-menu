@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* CSS Document */
+
+header {
+	margin-left: -20px;
+}
+
+.container-fluid {
+	max-width: 940px;
+}
+
+
+.span12 {
+	background-color: red;
+}
+
+.span6 {
+	background-color: blue;
+	float: left;
+}
