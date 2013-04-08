@@ -1,24 +1,376 @@
-@charset "UTF-8";
-/* CSS Document */
+a:focus {
+	outline: 0;	
+}
+body{
+	background: #fff;
+	color:#000;
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	font-size:12px;
+}
+
+a:link,
+a:visited {
+	color:#000;
+	text-decoration:none;
+}
+
+a:hover,
+a:visited {
+	text-decoration: underline;
+}
 
 .container-fluid {
+	background: #fff;
 	max-width: 940px;
 	margin: auto;
+	padding: 0 12px 0 0;
+	box-shadow: 3px 10px 20px #888;
+}
+.content {
+	max-width:940px;
+	margin:0 auto;
+	width:100%;
+	position:relative;
+	max-width: 940px;
 }
 
-/*Diagnostic styling*/
-
-.span12 {
-	background-color: red;
+h1{
+	color:#000;
+	font-size: 71px;
+	line-height: 60px;
+	padding: 10px;
+	text-shadow:1px 1px 1px #eee;
+	text-transform:uppercase;
 }
 
-.span6 {
-	background-color: blue;
-	float: left;
+h1 span {
+	letter-spacing:1px;	
+}
+
+nav a img {
+	left: 132px;
+	position: absolute;
+	top: 50px;	
+}
+
+nav ul:last-child img {
+	margin-right: 10px
+}
+
+hr {
+margin: 0 0 0 8%;
+border: 0;
+background: #000;
+height: 1px;
+width: 81%;
+}
+
+li {
+	font-size: 2em;
+	line-height: 38px;
+	list-style: none;
+	margin: 0 8px 0 8px;
+	padding: 0 10px 0 10px;
+}
+
+nav  {
+	background: url(../img/wood_pattern.png);
+	height: 100%;
+	width: 200px;
+	min-height:500px;
+	padding-top: 30px;
+	position: fixed;
+}
+
+#title:hover {
+	text-decoration: none;	
+}
+
+ul {
+	margin: 0;	
+	padding: 10px 0;
+}
+
+/*carousel styling*/
+
+#myCarousel {
+	border-bottom: 1px solid #000;
+	margin: 0 0 100px 212px;
+	padding-bottom: 12px;
+	width:728px;	
+}
+
+#myCarousel a {
+	color: #fff;
+	font-size: 120px;	
+}
+.carousel-control {
+	background: none;
+	border: 0;
+	top: 48%;
+}
+
+.slide1 {
+	background: url(../img/slide1.jpg);
+	width: 728px;
+	height: 530px;	
+}
+
+.slide2 {
+	background: url(../img/slide2.jpg);
+	width: 740px;
+	height: 530px;	
+}
+
+.slide3 {
+	background: url(../img/slide3.jpg);
+	width: 740px;
+	height: 530px;	
+}
+
+.slide4 {
+	background: url(../img/slide4.jpg);
+	width: 740px;
+	height: 530px;	
+}
+
+.slide5 {
+	background: url(../img/slide5.jpg);
+	width: 740px;
+	height: 530px;	
+}
+/*accordian body*/
+
+
+/* Vertical Accordion Style */
+body div.#va-accordion {
+	width: 100%;	
+}
+
+.menu-wrapper {
+	border-bottom: 1px solid #000;
+	margin: 10% 0 0 22.553191%;	
+}
+
+.menu-wrapper h2{
+	font-family: 'Oxygen', sans-serif;	
+	font-size: 40px;
+	font-weight: 300;
+	padding-top: 15px;
+	text-align: center;
+}
+
+.menu-wrapper h3 {
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 300;
+	font-size:35px;
+	line-height: 56px;
+	margin-left:10px;
+	color:#000;
+	text-shadow: 0px 0px 1px #eee;
+}
+
+.va-container{
+	position:relative;
+	margin:20px auto 0 auto;
+	width: 100%;
+}
+
+.va-wrapper{
+	width:100%;
+	height:100%;
+	position:relative;
+	overflow:hidden;
+	background:#000;
+}
+
+.va-slice{
+	border-top: 1px solid black;
+	cursor:pointer;
+	position:absolute;
+	width:100%;
+	left:0px;
+	overflow:hidden;
+}
+
+.va-content{
+	display:none;
+	line-height: 25px;
+	margin: 25px 0 0 15px;
+	width: 40%;
+}
+.va-slice p{
+	font-size: 15px;
+	font-family: 'Oxygen', sans-serif;
+}
+p.price {
+	font-size: 20px;
+	left: 20px;	
+	position: absolute;
+	top: 235px;
+}
+
+.dropdown-menu {
+	background: none;
+	border: none;
+	box-shadow: none;
+	font-size: 12px;
+}
+
+.dropdown-menu p {
+	line-height: 22px;	
+	margin-left: 10px;
+}
+/*********positioning the info img in dropdown menu*********/
+#raw {
+	left: 0;
+	top: 44px;	
+}
+
+#pepper {
+	left: 0;
+	top: 0px;
+}
+
+.info {
+	left: 70px;
+	position: absolute;
+	top: 228px;	
 }
 
 
-img {
-	height: auto;
-	max-width: 100%;
+/******menu images******/
+
+/*starters images*/
+
+.va-slice-1-starters{
+	background:#fff url(../img/edamame.jpg) no-repeat right center;
+}
+.va-slice-2-starters{
+	background:#fff url(../img/pork-egg-rolls.jpg) no-repeat right center;
+}
+.va-slice-3-starters{
+	background:#fff url(../img/pork-pot-stickers.jpg) no-repeat right center;
+}
+.va-slice-4-starters{
+	background:#fff url(../img/crab-ragoons.jpg) no-repeat right center;
+}
+.va-slice-5-starters{
+	background:#fff url(../img/firecracker-shrimp.jpg ) no-repeat right center;
+}
+
+/*soup images*/
+.va-slice-1-soup{
+	background:#fff url(../img/miso-soup.jpg) no-repeat right center;
+}
+.va-slice-2-soup{
+	background:#fff url(../img/wonton-soup.jpg) no-repeat right center;
+}
+.va-slice-3-soup{
+	background:#fff url(../img/egg-drop-soup.jpg) no-repeat right center;
+}
+.va-slice-4-soup{
+	background:#fff url(../img/spicy-curry.jpg) no-repeat right center;
+}
+
+/*entree images*/
+.va-slice-1-entrees{
+	background:#fff url(../img/general-tso.jpg) no-repeat right center;
+}
+.va-slice-2-entrees{
+	background:#fff url(../img/kung-pao.jpg) no-repeat right center;
+}
+.va-slice-3-entrees{
+	background:#fff url(../img/orange-peel.jpg) no-repeat right center;
+}
+.va-slice-4-entrees{
+	background:#fff url(../img/moo-shu.jpg) no-repeat right center;
+}
+.va-slice-5-entrees{
+	background:#fff url(../img/mongolian-beef.jpg ) no-repeat right center;
+}
+.va-slice-6-entrees{
+	background:#fff url(../img/almond-chicken.jpg) no-repeat right center;
+}
+.va-slice-7-entrees{
+	background:#fff url(../img/pad-thai.jpg) no-repeat right center;
+}
+.va-slice-8-entrees{
+	background:#fff url(../img/lo-mein.jpg) no-repeat right center;
+}
+.va-slice-9-entrees{
+	background:#fff url(../img/honey-walnut-prawns.jpg) no-repeat right center;
+}
+.va-slice-10-entrees{
+	background:#fff url(../img/stir-fry.jpg) no-repeat right center;
+}
+
+/*sushi images*/
+.va-slice-1-sushi{
+	background:#fff url(../img/spiral-ecstacy.jpg) no-repeat right center;
+}
+.va-slice-2-sushi{
+	background:#fff url(../img/big-temp-maki.jpg) no-repeat right center;
+}
+.va-slice-3-sushi{
+	background:#fff url(../img/kanki.jpg) no-repeat right center;
+}
+.va-slice-4-sushi{
+	background:#fff url(../img/banzai.jpg) no-repeat right center;
+}
+.va-slice-5-sushi{
+	background:#fff url(../img/scallop-banzai.jpg ) no-repeat right center;
+}
+.va-slice-6-sushi{
+	background:#fff url(../img/tuna-rio.jpg) no-repeat right center;
+}
+.va-slice-7-sushi{
+	background:#fff url(../img/sheila-maki.jpeg) no-repeat right center;
+}
+.va-slice-8-sushi{
+	background:#fff url(../img/volcano.jpg) no-repeat right center;
+}
+
+
+.va-nav span{
+	width:40px;
+	height:25px;
+	background:transparent url(../images/prev.png) no-repeat center center;
+	position:absolute;
+	top:-35px;
+	left:50%;
+	margin-left:-20px;
+	text-indent:-9000px;
+	opacity:0.7;
+	cursor:pointer;
+	display:none;
+	z-index:100;
+}
+.va-nav span.va-nav-next{
+	background-image:url(../images/next.png);
+	top:auto;
+	bottom:-35px;
+}
+.va-nav span:hover{
+	opacity:1.0;
+}
+
+.fill {
+	width: 100%;	
+	height: 500px;
+}
+
+#history {
+	border: none;
+}
+
+#history p {
+	font-family: 'Oxygen', sans-serif;
+	font-size: 20px;
+	line-height: 32px;	
+}
+
+#history img {
+	margin: 3% 49%;	
+	height: 15%;
 }

@@ -1,97 +1,392 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-	<meta charset="utf-8" />
-	<title>Website</title>
-	
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/styles.css" />
-	
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>YanSanSushi</title>
+
+<link href='http://fonts.googleapis.com/css?family=Oxygen:300,400' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/normalize.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="shortcut icon" type="image/x-icon" href="http://studentweb.ewu.edu/jphilp55/p2/favicon.ico">
 </head>
+
 <body>
 
-	<div class="container-fluid">
+<div class="container-fluid">
+
+    <header>
+    
+     <nav>
+     
+        <a href="#box1" id="title" class="anchorLink"><img src="img/fish-logo.png" /><h1><span>Yan</span> San Sushi</h1></a>
+            <ul>
+                <li><a href="#box2" class="anchorLink">STARTERS</a></li>
+                <li><a href="#box3" class="anchorLink">SOUPS</a></li>
+                <li><a href="#box4" class="anchorLink">ENTR&Eacute;ES</a></li>
+                <li><a href="#box5" class="anchorLink">SUSHI</a></li>
+                <li><a href="#box6" class="anchorLink">HISTORY</a></li>
+            </ul>
+            <hr>
+            <ul>
+            	<li><img src="img/pepper.png" />spicy!</li>
+                <li><img src="img/fish.png" />raw fish</li>
+            </ul>
+        </nav>
+       
+    </header>
+   
+   <a id="box1"></a>
+<!--carousel start-->
+    <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+  <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item"><div class="slide1"></div></div>
+        <div class="item"><div class="slide2"></div></div>
+        <div class="item"><div class="slide3"></div></div>
+        <div class="item"><div class="slide4"></div></div>
+        <div class="item"><div class="slide5"></div></div>
+      </div>
+  <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div> <!--carousel close-->
+    
+  
+
+<!--Start of starters menu--> 
+<div class="menu-wrapper"> 
+<a id="box2"></a>
+    <h2>&ndash;Starters&ndash;</h2>
+        
+        <div id="starters" class="va-container">
+            <div class="va-nav">
+                <span class="va-nav-prev">Previous</span>
+                <span class="va-nav-next">Next</span>
+            </div>
+            <div class="va-wrapper">
+                <div class="va-slice va-slice-1-starters">
+                    <h3>Edamame</h3>
+                    <div class="va-content">
+                        <p>Steamed soy beans served with sea salt.</p>
+                        <p class="price">&#36;6</p>
+                    </div>
+                </div>
+                <div class="va-slice va-slice-2-starters">
+                    <h3>Pork Egg Rolls</h3>
+                    <div class="va-content">
+                        <p>Ginger and garlic seasoned pork, shredded cabbage and carrots rolled together and fried in olive oil until crispy.</p>
+                        <p class="price">&#36;6</p>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-3-starters">
+                    <h3>Pork Pot Stickers</h3>
+                    <div class="va-content">
+                        <p>Steamed and lightly pan-fried served in a sweet chili broth. Order of 5.</p>
+                        <p class="price">&#36;7</p>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-4-starters">
+                    <h3>Crab Rangoons</h3>
+                    <div class="va-content">
+                        <p>Fried crab dumplings served with a sweet chili dipping sauce. Order of 5.</p>
+                        <p class="price">&#36;7</p>
+                        <div class="info">
+                        	<img src="img/pepper.png" />
+                        </div>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-5-starters">
+                    <h3>Firecracker Shrimp</h3>
+                    <div class="va-content">
+                        <p>Wok fried shrimp tossed in spicy aioli. Served over shoestring veggies.</p>
+                        <p class="price">&#36;10</p>
+                        <div class="info">
+                        	<img src="img/pepper.png" />
+                            <img src="img/pepper.png" />
+                            <img src="img/pepper.png" />
+                            <img src="img/pepper.png" />
+                        </div>
+                    </div>	
+                </div>
+            </div>
+        </div>            
+  </div><!--close starters menu-->
+  
+
+<!--start soups menu-->
+<div class="menu-wrapper"> 
+<a id="box3"></a>
+    <h2>&ndash;Soups&ndash;</h2>
+        
+        <div id="soups" class="va-container">
+            <div class="va-nav">
+                <span class="va-nav-prev">Previous</span>
+                <span class="va-nav-next">Next</span>
+            </div>
+            <div class="va-wrapper">
+                <div class="va-slice va-slice-1-soup">
+                    <h3>Miso</h3>
+                    <div class="va-content">
+                        <p>Miso broth, green onion, and tofu.</p>
+                        <p class="price">&#36;3</p>
+                    </div>
+                </div>
+                <div class="va-slice va-slice-2-soup">
+                    <h3>Wor Wonton</h3>
+                    <div class="va-content">
+                        <p>Ginger pork wontons, char siu pork, chicken, shrimp, water chestnuts, bok choy and mushrooms.</p>
+                        <p class="price">&#36;4</p>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-3-soup">
+                    <h3>Chicken Egg Drop</h3>
+                    <div class="va-content">
+                        <p>Classic Japanese style egg drop soup with lemongrass seasoned chicken.</p>
+                        <p class="price">&#36;6</p>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-4-soup">
+                    <h3>Curry Bowls</h3>
+                    <div class="va-content">
+                        <p>Rich curry broth stewed with lemon grass, kaffir leaves, ginger, onions, mushrooms, carrots, organic tomatoes and bell peppers. Tofu, Chicken, Pork, Shrimp or Frog Legs.</p>
+                        <p class="price">&#36;10</p>
+                        <div class="info">
+                        	<img src="img/pepper.png" />
+                            <img src="img/pepper.png" />
+                        </div>
+                        
+                    </div>	
+                </div>
+            </div>
+        </div>            
+  </div><!--close soups menu-->
+  
+
+<!--start entree menu-->
+<div class="menu-wrapper"> 
+<a id="box4"></a>
+    <h2>&ndash;Entr&eacute;es&ndash;</h2>
+        
+        <div id="entrees" class="va-container">
+            <div class="va-nav">
+                <span class="va-nav-prev">Previous</span>
+                <span class="va-nav-next">Next</span>
+            </div>
+            <div class="va-wrapper">
+                <div class="va-slice va-slice-1-entrees">
+                    <h3>General Tso's</h3>
+                    <div class="va-content">
+                        <p>Chicken, red peppers, bean sprouts and scallions with a golden sweet and sour sauce.</p>
+                        <p class="price">&#36;15</p>
+                        <div class="info">
+                        	<img src="img/pepper.png" />
+                            <img src="img/pepper.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="va-slice va-slice-2-entrees">
+                    <h3>Kung Pao</h3>
+                    <div class="va-content">
+                        <p>Wok seared with red chiles and roasted peanuts with a tangy soy sauce.</p>
+                        <p class="price">&#36;16</p>
+                        <div class="info">
+                        	<img src="img/pepper.png" />
+                            <img src="img/pepper.png" />
+                            <img src="img/pepper.png" />
+                        </div>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-3-entrees">
+                    <h3>Orange Peel</h3>
+                    <div class="va-content">
+                        <p>Chinese preserved orange peel, onions, carrots, bell pepper and scallions in a tangy red glaze.</p>
+                        <p class="price">&#36;15</p>
+                        <div class="info">
+                            <img src="img/pepper.png" />
+                        </div>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-4-entrees">
+                    <h3>Moo Shu</h3>
+                    <div class="va-content">
+                        <p>Cabbage, wood ear mushrooms, bamboo shoots, scallions and egg in a mushroom soy sauce. Served with Moo Shu pancakes and hoisin sauce.</p>
+                        <p class="price">&#36;15</p>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-5-entrees">
+                    <h3>Mongolian Beef</h3>
+                    <div class="va-content">
+                        <p>Slices of wok caramelized steak, sautéed mushrooms, yellow onions with a sweet soy sauce, fresh green onions, black and white sesame seeds. Served over a bed of fried rice sticks.</p>
+                        <p class="price">&#36;18</p>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-6-entrees">
+                    <h3>Almond Chicken</h3>
+                    <div class="va-content">
+                        <p>Water chestnuts, green peppers, celery, bamboo shoots and mushrooms, in a dark soy gravy.</p>
+                        <p class="price">&#36;16</p>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-7-entrees">
+                    <h3>Pad Thai</h3>
+                    <div class="va-content">
+                        <p>Wide rice noodles stir-fried with prawns, chicken, tofu, egg, scallions, crushed peanuts and bean sprouts. Tossed in a spicy tamarind peanut sauce.</p>
+                        <p class="price">&#36;16</p>
+                        <div class="info">
+                            <img src="img/pepper.png" />
+                        </div>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-8-entrees">
+                    <h3>Lo Mein</h3>
+                    <div class="va-content">
+                        <p>Traditional soft egg noodles, organic vegetables and your choice of meat stir fried in a dark soy sauce. Choice of chicken, shrimp, beef or pork. </p>
+                        <p class="price">&#36;12</p>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-9-entrees">
+                    <h3>Honey Walnut Prawns</h3>
+                    <div class="va-content">
+                        <p>Prawns and candied walnuts in an Asian honey cream sauce over crisp shredded iceberg lettuce. </p>
+                        <p class="price">&#36;17</p>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-10-entrees">
+                    <h3>Sichuan Stir-Fry</h3>
+                    <div class="va-content">
+                        <p>Strips of beef and veggies quickly stir-fried in a spicy Sichuan pepper glaze.</p>
+                        <p class="price">&#36;15</p>
+                        <div class="info">
+                        	<img src="img/pepper.png" />
+                            <img src="img/pepper.png" />
+                            <img src="img/pepper.png" />
+                            <img src="img/pepper.png" />
+                        </div>
+                    </div>	
+                </div>
+            </div>
+        </div>            
+  </div><!--close entree menu-->
 
 
+<!--start sushi menu-->                       
+<div class="menu-wrapper">
+<a id="box5"></a> 
+    <h2>&ndash;Sushi&ndash;</h2>
+        
+        <div id="sushi" class="va-container">
+            <div class="va-nav">
+                <span class="va-nav-prev">Previous</span>
+                <span class="va-nav-next">Next</span>
+            </div>
+            <div class="va-wrapper">
+                <div class="va-slice va-slice-1-sushi">
+                
+                    <h3>Spiral Ecstacy Roll</h3>
+                    <div class="va-content">
+                        <p>Shrimp, crab stick and avocado rolled with salmon, yellowtail and tuna.</p>
+                        <p class="price">&#36;11</p>
+                        <div class="info">
+                        	<img src="img/fish.png" />
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="va-slice va-slice-2-sushi">
+                
+                    <h3>Big Tempura Maki</h3>
+                    <div class="va-content">
+                        <p>Shrimp, crab stick, chef's choice of fish and avocado batter friend together and wrapped in rice and nori.</p>
+                        <p class="price">&#36;10</p>
+                    </div>	
+                    
+                </div>
+                <div class="va-slice va-slice-3-sushi">
+                    <h3>Kanki By the Sea</h3>
+                    <div class="va-content">
+                        <p>Eel and avocado rolled in crab stick and tobiko, served on a bed of seaweed salad with a cream sauce</p>
+                        <p class="price">&#36;10</p>    
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-4-sushi">
+                    <h3>Banzai Roll</h3>
+                    <div class="va-content">
+                        <p>Salmon, eel, octopus, and avocado.</p>
+                        <p class="price">&#36;11</p>
+                        <div class="info">
+                        	<img src="img/fish.png" />
+                        </div>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-5-sushi">
+                    <h3>Scallop Banzai Roll</h3>
+                    <div class="va-content">
+                        <p>Salmon, eel, scallops, and avocado.</p>
+                        <p class="price">&#36;12</p>
+                        <div class="info">
+                        	<img src="img/fish.png" />
+                        </div>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-6-sushi">
+                    <h3>Tuna Rio</h3>
+                    <div class="va-content">
+                        <p>Shrimp tempura, cream cheese, and spicy mayo in a reverse roll with tuna. Baked and topped with hot sauce and jalape&ntilde;os.</p>
+                        <p class="price">&#36;12</p>
+                        <div class="info">
+                        	<img src="img/pepper.png" />
+                            <img src="img/pepper.png" />
+                        </div>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-7-sushi">
+                    <h3>Sheila Maki</h3>
+                    <div class="va-content">
+                        <p>Butterfish, crab stick, avocado, masago and spicy mayo in a reverse roll layered with tempura drops and seasoned sweet soy.</p>
+                        <p class="price">&#36;7</p>
+                        <div class="info">
+                        	<img src="img/pepper.png" />
+                        </div>
+                    </div>	
+                </div>
+                <div class="va-slice va-slice-8-sushi">
+                    <h3>Volcano Roll</h3>
+                    <div class="va-content">
+                        <p>Crab stick, avocado and cream cheese rolled and covered with a unique spicy lava sauce.</p>
+                        <p class="price">&#36;11.5</p>
+                        <div class="info">
+                        	<img src="img/pepper.png" />
+                        	<img src="img/pepper.png" />
+                            <img src="img/pepper.png" />
+                            <img src="img/pepper.png" />
+                        </div>
+                    </div>	
+                </div>
+            </div>
+        </div>            
+  </div><!--close soups menu-->           
+                       
+<div id="history" class="menu-wrapper">
+<a id="box6"></a> 
+	<h2>&ndash;History&ndash;</h2>
+    <p>Yan San Sushi is a local restaurant that was started in February of 2013. We are happy to finally be in business and bring you the best meal experience possible! To be completely honest though, we have yet to sell a single meal…and we still don't have a store…but our hopes and aspirations are high! Also, if you know anyone that can make sushi, please have them contact us, for our sou chef is currently on leave. Ok. We just don't have one yet. That's ok though, it can't be that hard to make sushi! Until we are able to find a permanent location, you can find us downtown, making tasty meals out of the trunk of a gold Nissan Sentra. Hope to see you soon!</p>
+	<div class="fill"><img src="img/fish-logo.png" /></div> 
 
-		<header> 
+</div>                                        
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jquery.anchor.js"></script>
+    <script type="text/javascript" src="js/jquery.vaccordion.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</div>
 
-			<div class="row-fluid">
-				
-				<div class="span12">
-					<p>poop</p>
-				</div>
-				
-			</div>
-
-		</header>
-
-
-
-
-		<section>
-
-			<div class="row-fluid">
-
-				<div class="span6">
-
-					<img src="img/goldeen.gif" />
-					<p>poop</p>
-
-				</div>
-				
-				<div class="span6">
-					<p>poop</p>
-				</div>
-
-			</div>
-
-
-			<div class="row-fluid">
-				
-				<div class="span6">
-					<p>poop</p>
-				</div>
-				
-				<div class="span6">
-					<p>poop</p>
-				</div>
-
-			</div>
-
-
-			<div class="row-fluid">
-
-				<div class="span6">
-					<p>poop</p>
-				</div>
-				
-				<div class="span6">
-					<p>poop</p>
-				</div>
-
-			</div>
-
-
-
-			<div class="row-fluid">
-				
-				<div class="span6">
-					<p>poop</p>
-				</div>
-				
-				<div class="span6">
-					<p>poop</p>
-				</div>
-
-			</div>
-
-		</section>
-
-
-
-	</div>
-	
 </body>
 </html>
